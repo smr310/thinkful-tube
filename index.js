@@ -39,14 +39,11 @@ function renderResult(eachItem) {
 }
 
 function clickCB(event) {
-  const videoID = $(event.target).attr("data-item-id")
+  const videoID = $(event.target).attr("data-item-id");
   window.location.href = `https://www.youtube.com/watch?v=${videoID}`;
-};
+}
 
-// const thumbnail = document.querySelectorAll('.image');
-// thumbnail.addEventListener("click", function() {
-//   console.log('event listener working');
-// });
+
 
 
 $(pageLoadCallBack);
