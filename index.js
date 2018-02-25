@@ -30,8 +30,9 @@ function getDataFromApiCB(data) {
 }
 
 function renderResult(eachItem) {
-  return `
-    <div class='results'>
+  return 
+  `  
+  <div class='results'>
       ${eachItem.snippet.title}
       <img data-item-id="${eachItem.id.videoId}" onclick="clickCB(event)" class="image" src="${eachItem.snippet.thumbnails.medium.url}">
     </div>
@@ -42,8 +43,5 @@ function clickCB(event) {
   const videoID = $(event.target).attr("data-item-id");
   window.location.href = `https://www.youtube.com/watch?v=${videoID}`;
 }
-
-
-
 
 $(pageLoadCallBack);
