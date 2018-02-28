@@ -29,6 +29,12 @@ function getDataFromApiCB(data) {
   $('.js-search-results').html(results);
 }
 
+
+function displayNumResults() {
+  $('.number-results').html(`showing ${data.items.length} results`)
+}
+
+
 function renderResult(eachItem) {
   return `
     <div class='results'>
